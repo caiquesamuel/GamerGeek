@@ -62,30 +62,27 @@ body {
 
 /* DROPDOWN */
 .menu ul ul {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
+
     background: var(--bg-secondary);
-    min-width: 200px;
+    min-width: 220px;
+
     border: 1px solid var(--border);
     z-index: 999;
-
-    /* animação */
-    opacity: 0;
-    transform: translateY(10px);
-    visibility: hidden;
-    transition: all 0.3s ease;
 }
 
+/* mostrar */
 .menu li:hover > ul {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
+    display: block;
 }
 
 /* itens internos */
 .menu ul ul li {
     width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 /* links do dropdown */
@@ -96,18 +93,18 @@ body {
 
 /* submenu lateral */
 .menu ul ul ul {
-    top: 0;
-    left: 100%;
+    position: static;
+    border-top: 1px solid var(--border);
 
     transform: translateX(10px);
 }
 
-/* animação lateral 
+/* animação lateral */
 .menu ul ul li:hover > ul {
     opacity: 1;
     transform: translateX(0);
     visibility: visible;
-}*/
+}
 
 /* SEARCH */
 .search {
@@ -119,7 +116,7 @@ body {
     border-radius: 5px;
     border: 1px solid var(--border);
     background: #000;
-    color: #fff;
+    color: var(--primary);
 }
 
 /* NEWS */
@@ -209,4 +206,191 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 10px;
+}
+
+/* HERO BANNER */
+.hero-banner {
+    width: 100%;
+    height: 500px;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+        url('../img/banner.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.hero-overlay {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-overlay h1 {
+    font-size: 52px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero-overlay p {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 14px 30px;
+
+    background: #e60023;
+    color: #fff;
+
+    text-decoration: none;
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #ff0033;
+    transform: scale(1.05);
+}
+
+/* DESTAQUE DA SEMANA */
+    font-size: 32px;
+}
+
+.featured-container {
+    display: flex;
+    gap: 30px;
+
+    background: #0a0a0a;
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.featured-container img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.featured-content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured-tag {
+    background: #e60023;
+    color: #fff;
+
+    padding: 6px 12px;
+    border-radius: 4px;
+
+    width: fit-content;
+
+    margin-bottom: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.featured-content h3 {
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.featured-content p {
+    color: #aaa;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.featured-content a {
+    width: fit-content;
+
+    background: #e60023;
+    color: #fff;
+
+    padding: 12px 24px;
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.featured-content a:hover {
+    background: #ff0033;
+}
+
+/* SLIDER */
+.slider-news {
+    padding: 40px;
+}
+
+.slider-news h2 {
+    color: #22c55e;
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    padding-bottom: 10px;
+}
+
+.slider-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.slider-container::-webkit-scrollbar-thumb {
+    background: #e60023;
+    border-radius: 10px;
+}
+
+.slide-card {
+    min-width: 300px;
+
+    background: #0a0a0a;
+    border: 1px solid #1f2937;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.slide-card:hover {
+    transform: translateY(-5px);
+    border-color: #e60023;
+}
+
+.slide-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.slide-card h3 {
+    color: #fff;
+    padding: 20px;
+    font-size: 18px;
 }
