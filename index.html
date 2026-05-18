@@ -15,6 +15,9 @@
 <!--    <div class="bg">
         <img src="img/BackTitle.png" alt="Banner Gamer Geek">
     </div> -->
+    <div class="mobile-toggle" id="mobile-toggle">
+    ☰
+    </div>
 
     <nav class="menu">
         <ul>
@@ -175,6 +178,7 @@
 </footer>
 
 <script>
+// dark and light mode    
 const toggle = document.getElementById("theme-toggle");
 toggle.addEventListener("click", () => {
     document.body.classList.toggle("light-mode");
@@ -183,6 +187,25 @@ toggle.addEventListener("click", () => {
     }else{
         toggle.innerHTML = "🌙";
     }
+});
+
+//menu e responsividade
+const mobileToggle =
+    document.getElementById("mobile-toggle");
+
+const menu =
+    document.querySelector(".menu");
+
+mobileToggle.addEventListener("click", () => {
+
+    menu.classList.toggle("active");
+
+    if(menu.classList.contains("active")){
+        mobileToggle.innerHTML = "✖";
+    }else{
+        mobileToggle.innerHTML = "☰";
+    }
+
 });
 </script>
 
