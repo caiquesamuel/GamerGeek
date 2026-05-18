@@ -51,6 +51,9 @@
             <li><a href="tecnologia.html">Tecnologia</a></li>
             <li><a href="hqs.html">HQs</a></li>
             <li><a href="downloads.html">Downloads</a></li>
+            <li>
+                <button id="theme-toggle">🌙</button>
+            </li>
             <li class="search">
                 <input type="text" placeholder="Pesquisar...">
             </li>
@@ -90,7 +93,7 @@
                 inteligência artificial avançada e o maior mapa já criado.
             </p>
 
-            <a href="#">Ler Matéria Completa</a>
+            <a href="destaque.html">Ler Matéria Completa</a>
 
         </div>
 
@@ -125,6 +128,11 @@
             <h3>Nintendo revela novo console</h3>
         </div>
 
+        <div class="slide-card">
+            <img src="img/slide5.jpg" alt="Slide 5">
+            <h3>Nintendo revela novo console</h3>
+        </div>
+
     </div>
 
 </section>
@@ -146,6 +154,18 @@
         <p>© 2026 Gamer Geek</p>
     </div>
 </footer>
+
+<script>
+const toggle = document.getElementById("theme-toggle");
+toggle.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+    if(document.body.classList.contains("light-mode")){
+        toggle.innerHTML = "☀️";
+    }else{
+        toggle.innerHTML = "🌙";
+    }
+});
+</script>
 
 </body>
 </html>

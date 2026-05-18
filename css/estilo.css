@@ -6,6 +6,22 @@
     --border: #1f2937;
     --primary: #22c55e;
     --accent: #e60023;
+    --menu-bg: rgba(17,17,17,0.92);
+    --menu-hover: #22c55e;
+    --menu-hover-text: #000;
+}
+
+body.light-mode{
+    --bg: #f8fafc;
+    --bg-secondary: #e2e8f0;
+    --text: #0f172a;
+    --text-secondary: #475569;
+    --border: #cbd5e1;
+    --primary: #16a34a;
+    --accent: #e60023;
+    --menu-bg: rgba(255,255,255,0.95);
+    --menu-hover: #16a34a;
+    --menu-hover-text: #fff;
 }
 
 /* RESET */
@@ -19,6 +35,10 @@ body {
     font-family: 'Lato', sans-serif;
     background: var(--bg);
     color: var(--text);
+    padding-top: 60px;
+    transition:
+        background 0.3s,
+        color 0.3s;
 }
 
 /* HEADER */
@@ -31,11 +51,21 @@ body {
 }
 
 /* MENU */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: var(--menu-bg);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
 .menu ul {
     display: flex;
     align-items: center;
     list-style: none;
-    background: var(--bg-secondary);
     border-bottom: 1px solid var(--border);
     padding: 0 20px;
 }
@@ -53,7 +83,7 @@ body {
 }
 
 .menu li:hover {
-    background: var(--primary);
+    background: var(--menu-hover);
 }
 
 .menu li:hover a {
@@ -400,4 +430,19 @@ body {
     color: #fff;
     padding: 20px;
     font-size: 18px;
+}
+
+#theme-toggle{
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#theme-toggle:hover{
+    background: var(--primary);
+    color: #000;
 }
