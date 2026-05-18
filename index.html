@@ -2,212 +2,172 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Gamer Geek</title>
 
-    <link rel="stylesheet" href="css/estilo.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/estilo.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-<!--    <div class="bg">
-        <img src="img/BackTitle.png" alt="Banner Gamer Geek">
-    </div> -->
-    <div class="mobile-toggle" id="mobile-toggle">
-    ☰
-    </div>
+    <!-- HEADER -->
+    <div id="header"></div>
 
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="noticias.html">Notícias</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li>
-                <a href="games.html">Games</a>
-                <ul>
-                    <li><a href="pc.html">PC</a></li>
-                    <li>
-                        <a href="playstation.html">PlayStation</a>
-                        <ul>
-                            <li><a href="ps4.html">PS4</a></li>
-                            <li><a href="ps5.html">PS5</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="xbox.html">Xbox</a>
-                        <ul>
-                            <li><a href="xboxone.html">One</a></li>
-                            <li><a href="xboxseriesx.html">Series X</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="nintendo.html">Nintendo</a>
-                        <ul>
-                            <li><a href="switch.html">Switch</a></li>
-                            <li><a href="switch2.html">Switch 2</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="tecnologia.html">Tecnologia</a></li>
-            <li><a href="hqs.html">HQs</a></li>
-            <li><a href="downloads.html">Downloads</a></li>
-            <li>
-                <button id="theme-toggle">🌙</button>
-            </li>
-            <li class="search">
-                <input type="text" placeholder="Pesquisar...">
-            </li>
-        </ul>
-    </nav>
-</header>
+    <!-- CONTEÚDO -->
+    <main>
 
-<!-- banner -->
-<section class="hero-banner">
-    <div class="hero-overlay">
-        <h1>O Universo Geek em um Só Lugar</h1>
-        <p>
-            Notícias, reviews e novidades sobre games,
-            tecnologia e cultura geek.
-        </p>
-        <a href="games.html" class="hero-btn">Explorar Games</a>
-    </div>
-</section>
-
-<!-- destaque -->
-<section class="featured-week">
-
-    <h2>Destaque da Semana</h2>
-
-    <div class="featured-container">
-
-        <img src="img/destaque.jpg" alt="Destaque da Semana">
-
-        <div class="featured-content">
-
-            <span class="featured-tag">EXCLUSIVO</span>
-
-            <h3>GTA VI promete revolucionar os jogos de mundo aberto</h3>
-
-            <p>
-                Novos vazamentos indicam gráficos impressionantes,
-                inteligência artificial avançada e o maior mapa já criado.
-            </p>
-
-            <a href="destaque.html">Ler Matéria Completa</a>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- slider -->
-<section class="slider-news">
-
-    <h2>🔥 Em Alta</h2>
-
-    <div class="slider-wrapper">
-
-        <div class="slider-container">
-
-            <div class="slide-card">
-                <img src="img/slide1.jpg">
-                <h3>GTA VI ganha novo trailer</h3>
+        <!-- HERO -->
+        <section class="hero-banner">
+            <div class="hero-overlay">
+                <h1>
+                    O Universo Geek em um Só Lugar
+                </h1>
+                <p>
+                    Notícias, reviews e novidades sobre games,
+                    tecnologia e cultura geek.
+                </p>
+                <a href="/pages/games.html"
+                   class="hero-btn">
+                    Explorar Games
+                </a>
             </div>
+        </section>
 
-            <div class="slide-card">
-                <img src="img/slide2.jpg">
-                <h3>Xbox revela novo exclusivo</h3>
+        <!-- DESTAQUE -->
+        <section class="featured-week">
+
+            <h2>Destaque da Semana</h2>
+            <div class="featured-container">
+                <img src="/assets/img/destaque.jpg"
+                     alt="Destaque da Semana">
+                <div class="featured-content">
+                    <span class="featured-tag">
+                        EXCLUSIVO
+                    </span>
+                    <h3>
+                        GTA VI promete revolucionar os jogos
+                    </h3>
+                    <p>
+                        Novos vazamentos indicam gráficos
+                        impressionantes e IA avançada.
+                    </p>
+                    <a href="/noticias/destaque.html">
+                        Ler Matéria Completa
+                    </a>
+                </div>
             </div>
+        </section>
 
-            <div class="slide-card">
-                <img src="img/slide3.jpg">
-                <h3>PlayStation surpreende jogadores</h3>
+        <!-- TREND SLIDER -->
+        <section class="slider-news">
+            <h2>🔥 Em Alta</h2>
+
+            <div class="slider-wrapper">
+            
+                <div class="slider-container">
+                    <a href="/noticias/noticia13.html"
+                       class="slide-card">
+                        <img src="/assets/img/slide1.jpg">
+                        <h3>
+                            Cyberpunk ganha nova DLC
+                        </h3>
+                    </a>
+            
+                    <a href="/noticias/noticia14.html"
+                       class="slide-card">
+                        <img src="/assets/img/slide2.jpg">
+                        <h3>
+                            PlayStation revela exclusivo
+                        </h3>
+                    </a>
+            
+                    <a href="/noticias/noticia15.html"
+                       class="slide-card">
+                        <img src="/assets/img/slide3.jpg">
+                        <h3>
+                            GamePass surpreende jogadores
+                        </h3>
+                    </a>
+            
+                    <a href="/noticias/noticia16.html"
+                       class="slide-card">
+                        <img src="/assets/img/slide4.jpg">
+                        <h3>
+                            Nintendo revela novo console
+                        </h3>
+            
+                    </a>
+                    <a href="/noticias/noticia17.html"
+                       class="slide-card">
+                        <img src="/assets/img/slide6.jpg">
+                        <h3>
+                            GTA VI ganha novo trailer
+                        </h3>
+            
+                    </a>
+                    <a href="/noticias/noticia18.html"
+                       class="slide-card">
+                        <img src="/assets/img/slide7.jpg">
+                        <h3>
+                            Xbox revela novo exclusivo
+                        </h3>
+                    </a>
+
+                    <a href="/noticias/noticia13.html"
+                       class="slide-card">
+
+                        <img src="/assets/img/slide1.jpg">
+
+                        <h3>
+                            Cyberpunk ganha nova DLC
+                        </h3>
+
+                    </a>
+
+                    <a href="/noticias/noticia14.html"
+                       class="slide-card">
+
+                        <img src="/assets/img/slide2.jpg">
+
+                        <h3>
+                            PlayStation revela exclusivo
+                        </h3>
+
+                    </a>
+
+                    <a href="/noticias/noticia15.html"
+                       class="slide-card">
+
+                        <img src="/assets/img/slide3.jpg">
+                        <h3>
+                            GamePass surpreende jogadores
+                        </h3>
+                    </a>
+                    <a href="/noticias/noticia16.html"
+                       class="slide-card">
+                        <img src="/assets/img/slide4.jpg">
+                        <h3>
+                            Nintendo revela novo console
+                        </h3>
+                    </a>
+
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="slide-card">
-                <img src="img/slide4.jpg">
-                <h3>Nintendo revela novo console</h3>
-            </div>
+    <!-- FOOTER -->
+    <div id="footer"></div>
 
-            <div class="slide-card">
-                <img src="img/slide1.jpg">
-                <h3>GTA VI ganha novo trailer</h3>
-            </div>
-
-            <div class="slide-card">
-                <img src="img/slide2.jpg">
-                <h3>Xbox revela novo exclusivo</h3>
-            </div>
-
-            <div class="slide-card">
-                <img src="img/slide3.jpg">
-                <h3>PlayStation surpreende jogadores</h3>
-            </div>
-
-            <div class="slide-card">
-                <img src="img/slide4.jpg">
-                <h3>Nintendo revela novo console</h3>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<footer class="footer">
-    <div>
-        <h4>Social</h4>
-        <p><a href="#">Facebook</a></p>
-        <p><a href="#">Twitter</a></p>
-        <p><a href="#">Instagram</a></p>
-    </div>
-
-    <div>
-        <h4>Sobre</h4>
-        <p>Portal gamer com notícias e conteúdos geek.</p>
-    </div>
-
-    <div class="copy">
-        <p>© 2026 Gamer Geek</p>
-    </div>
-</footer>
-
-<script>
-// dark and light mode    
-const toggle = document.getElementById("theme-toggle");
-toggle.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-    if(document.body.classList.contains("light-mode")){
-        toggle.innerHTML = "☀️";
-    }else{
-        toggle.innerHTML = "🌙";
-    }
-});
-
-//menu e responsividade
-const mobileToggle =
-    document.getElementById("mobile-toggle");
-
-const menu =
-    document.querySelector(".menu");
-
-mobileToggle.addEventListener("click", () => {
-
-    menu.classList.toggle("active");
-
-    if(menu.classList.contains("active")){
-        mobileToggle.innerHTML = "✖";
-    }else{
-        mobileToggle.innerHTML = "☰";
-    }
-
-});
-</script>
+    <!-- JS -->
+    <script src="/assets/js/darkmode.js"></script>
+    <script src="/assets/js/mobile.js"></script>
+    <script src="/assets/js/slider.js"></script>
+    <script src="/assets/js/app.js"></script>
 
 </body>
 </html>

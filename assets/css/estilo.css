@@ -9,6 +9,13 @@
     --menu-bg: rgba(17,17,17,0.92);
     --menu-hover: #22c55e;
     --menu-hover-text: #000;
+    --card-bg: #0a0a0a;
+    --card-content: #111;
+    --white: #fff;
+    --title: #ffffff;
+    --card-title: #ffffff;
+    --surface: #111827;
+    --surface-2: #0a0a0a;
 }
 
 body.light-mode{
@@ -22,6 +29,13 @@ body.light-mode{
     --menu-bg: rgba(255,255,255,0.95);
     --menu-hover: #16a34a;
     --menu-hover-text: #fff;
+    --card-bg: #ffffff;
+    --card-content: #f8fafc;
+    --white: #0f172a;
+    --title: #0f172a;
+    --card-title: #0f172a;
+    --surface: #ffffff;
+    --surface-2: #f8fafc;
 }
 
 /* RESET */
@@ -96,6 +110,7 @@ body {
     color: var(--text);
     text-decoration: none;
     transition: 0.3s;
+    font-family: 'Lato', sans-serif;
 }
 
 .menu li:hover {
@@ -183,7 +198,7 @@ body {
 }
 
 .card {
-    background: #0a0a0a;
+    background: var(--card-bg);
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid var(--border);
@@ -204,12 +219,12 @@ body {
 /* CONTEÚDO */
 .card-content {
     padding: 15px;
-    background: #111;
+    background: var(--card-content);
     border-top: 1px solid var(--border);
 }
 
 .card-content h3 {
-    color: #fff;
+    color: var(--card-title);
 }
 
 .card-content p {
@@ -221,7 +236,7 @@ body {
     display: inline-block;
     padding: 8px 12px;
     background: var(--accent);
-    color: #fff;
+    color: var(--card-title);
     border-radius: 5px;
     margin-top: 10px;
 }
@@ -253,27 +268,6 @@ body {
     text-align: center;
     margin-top: 10px;
 }
-
-/* HERO BANNER 
-.hero-banner {
-    width: 100%;
-    height: 500px;
-
-    background:
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
-        url('../img/banner.jpg');
-
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-    margin-bottom: 50px;
-}*/
 
 .hero-banner {
 
@@ -313,7 +307,7 @@ body {
 .hero-overlay h1 {
     font-size: 72px;
     font-weight: 700;
-    color: #fff;
+    color: var(--title);
     margin-bottom: 25px;
     text-shadow:
         0 0 20px rgba(0,0,0,0.7);
@@ -338,6 +332,7 @@ body {
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
     transition: 0.3s;
     box-shadow:
@@ -364,8 +359,7 @@ body {
 .featured-container {
     display: flex;
     gap: 30px;
-
-    background: #0a0a0a;
+    background: var(--card-bg);
     border: 1px solid #1f2937;
     border-radius: 12px;
 
@@ -400,7 +394,7 @@ body {
 }
 
 .featured-content h3 {
-    color: #fff;
+    color: var(--title);
     font-size: 34px;
     margin-bottom: 20px;
 }
@@ -458,12 +452,13 @@ body {
 /* card */
 .slide-card {
     width: 320px;
-    background: #0a0a0a;
+    background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: 12px;
     overflow: hidden;
     flex-shrink: 0;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .slide-card:hover {
@@ -479,11 +474,29 @@ body {
 
 .slide-card h3 {
     padding: 20px;
-    color: #fff;
+    color: var(--card-title);
+    cursor:pointer;
+}
+
+.slide-card:hover h3{
+    color: var(--accent);
 }
 
 .slider-container:hover{
     animation-play-state: paused;
+}
+
+.slider-wrapper{
+    position: relative;
+    overflow: hidden;
+    mask-image:
+        linear-gradient(
+            to right,
+            transparent,
+            white 10%,
+            white 90%,
+            transparent
+        );
 }
 
 #theme-toggle{
@@ -606,7 +619,7 @@ body {
         left: -100%;
         width: 280px;
         height: 100vh;
-        background: #0a0a0a;
+        background: var(--card-bg);
         transition: 0.4s ease;
         overflow-y: auto;
     }
@@ -676,12 +689,14 @@ body {
     margin-bottom: 20px;
     font-size: 14px;
     font-weight: bold;
+    font-family: 'Lato', sans-serif;
 }
 
 .news-header h1{
     font-size: 52px;
     line-height: 1.2;
     margin-bottom: 20px;
+    color: var(--title);
 }
 
 .news-meta{
@@ -724,7 +739,7 @@ body {
 
 .comment h4{
     margin-bottom: 10px;
-    color: #fff;
+    color: var(--title);
 }
 
 .comment p{
