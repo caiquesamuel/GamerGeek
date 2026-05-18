@@ -266,6 +266,13 @@ body {
 }
 
 /* DESTAQUE DA SEMANA */
+.featured-week {
+    padding: 40px;
+}
+
+.featured-week h2 {
+    color: #22c55e;
+    margin-bottom: 25px;
     font-size: 32px;
 }
 
