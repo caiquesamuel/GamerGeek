@@ -601,19 +601,13 @@ body {
 
     /* MENU */
     .menu {
-
         position: fixed;
-
         top: 0;
         left: -100%;
-
         width: 280px;
         height: 100vh;
-
         background: #0a0a0a;
-
         transition: 0.4s ease;
-
         overflow-y: auto;
     }
 
@@ -623,11 +617,8 @@ body {
     }
 
     .menu ul {
-
         flex-direction: column;
-
         align-items: flex-start;
-
         padding-top: 80px;
     }
 
@@ -636,24 +627,17 @@ body {
     }
 
     .menu a {
-
         width: 100%;
-
         padding: 18px 25px;
-
         border-bottom:
             1px solid rgba(255,255,255,0.05);
     }
 
     /* dropdown mobile */
     .menu ul ul {
-
         position: static;
-
         display: none;
-
         width: 100%;
-
         border: none;
     }
 
@@ -663,13 +647,103 @@ body {
 
     /* search */
     .search {
-
         width: 100%;
-
         padding: 20px;
     }
 
     .search input {
         width: 100%;
     }
+}
+
+/* PÁGINA DE NOTÍCIA */
+.news-page{
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.news-header{
+    margin-bottom: 30px;
+}
+
+.news-category{
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.news-header h1{
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.news-meta{
+    display: flex;
+    gap: 20px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.news-image{
+    width: 100%;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.news-content p{
+    margin-bottom: 25px;
+    line-height: 1.9;
+    font-size: 20px;
+    color: var(--text-secondary);
+}
+
+/* COMENTÁRIOS */
+.comments{
+    margin-top: 60px;
+}
+
+.comments h2{
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+.comment{
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.comment h4{
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.comment p{
+    color: var(--text-secondary);
+}
+
+/* BOTÃO VOLTAR */
+.back-btn{
+    display: inline-block;
+    margin-top: 40px;
+    background: var(--accent);
+    color: #fff;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-btn:hover{
+    background: #ff0033;
+    transform: translateY(-3px);
 }
