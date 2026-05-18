@@ -238,7 +238,7 @@ body {
     margin-top: 10px;
 }
 
-/* HERO BANNER */
+/* HERO BANNER 
 .hero-banner {
     width: 100%;
     height: 500px;
@@ -257,42 +257,81 @@ body {
     text-align: center;
 
     margin-bottom: 50px;
+}*/
+
+.hero-banner {
+
+    width: 100%;
+    height: 650px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.8)
+        ),
+        url('../img/banner.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
 }
 
 .hero-overlay {
-    max-width: 800px;
-    padding: 20px;
+    max-width: 900px;
+    padding: 40px;
+    z-index: 2;
+    animation: fadeHero 1.2s ease;
 }
 
 .hero-overlay h1 {
-    font-size: 52px;
+    font-size: 72px;
+    font-weight: 700;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    text-shadow:
+        0 0 20px rgba(0,0,0,0.7);
+    line-height: 1.1;
 }
 
 .hero-overlay p {
-    font-size: 20px;
-    color: #ccc;
-    margin-bottom: 30px;
-    line-height: 1.6;
+    font-size: 22px;
+    color: #d1d5db;
+    line-height: 1.8;
+    margin-bottom: 35px;
 }
 
 .hero-btn {
     display: inline-block;
-    padding: 14px 30px;
-
-    background: #e60023;
+    padding: 16px 34px;
+    background: linear-gradient(
+        to right,
+        #e60023,
+        #ff0033
+    );
     color: #fff;
-
     text-decoration: none;
-    border-radius: 6px;
-
+    border-radius: 8px;
+    font-weight: bold;
     transition: 0.3s;
+    box-shadow:
+        0 0 20px rgba(230,0,35,0.4);
 }
 
 .hero-btn:hover {
-    background: #ff0033;
-    transform: scale(1.05);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow:
+        0 0 30px rgba(230,0,35,0.7);
 }
 
 /* DESTAQUE DA SEMANA */
@@ -445,4 +484,17 @@ body {
 #theme-toggle:hover{
     background: var(--primary);
     color: #000;
+}
+
+@keyframes fadeHero {
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
