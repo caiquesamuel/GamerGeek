@@ -1,156 +1,453 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews - Gamer Geek</title>
 
-    <link rel="stylesheet" href="css/estilo.css">
+    <title>Reviews | Gamer Geek</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/estilo.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-<!--    <div class="bg">
-        <img src="img/BackTitle.png" alt="Banner Gamer Geek">
-    </div> -->
+    <!-- HEADER -->
+    <div id="header"></div>
 
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="noticias.html">Notícias</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li>
-                <a href="games.html">Games</a>
-                <ul>
-                    <li><a href="pc.html">PC</a></li>
-                    <li>
-                        <a href="playstation.html">PlayStation</a>
-                        <ul>
-                            <li><a href="ps4.html">PS4</a></li>
-                            <li><a href="ps5.html">PS5</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="xbox.html">Xbox</a>
-                        <ul>
-                            <li><a href="xboxone.html">One</a></li>
-                            <li><a href="xboxseriesx.html">Series X</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="nintendo.html">Nintendo</a>
-                        <ul>
-                            <li><a href="switch.html">Switch</a></li>
-                            <li><a href="switch2.html">Switch 2</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="tecnologia.html">Tecnologia</a></li>
-            <li><a href="hqs.html">HQs</a></li>
-            <li><a href="downloads.html">Downloads</a></li>
-            <li class="search">
-                <input type="text" placeholder="Pesquisar...">
-            </li>
-        </ul>
-    </nav>
-</header>
+    <!-- HERO -->
+    <section class="hero-banner review-hero">
 
-<!-- CONTEÚDO -->
-<main>
+        <div class="hero-overlay">
 
-<section class="news">
+            <span class="hero-tag">
+                🔥 Reviews Gamer
+            </span>
 
-    <h2>Reviews em Destaque</h2>
+            <h1>
+                As análises mais completas do universo geek
+            </h1>
 
-    <div class="cards">
+            <p>
+                Reviews detalhadas, notas, gráficos,
+                desempenho e opiniões sinceras sobre os
+                principais lançamentos da indústria gamer.
+            </p>
 
-        <article class="card">
-            <img src="img/review1.jpg" alt="Review Elden Ring">
-            <div class="card-content">
-                <h3>Elden Ring impressiona com mundo aberto</h3>
-                <p>FromSoftware entrega uma experiência épica e desafiadora.</p>
-                <a href="#">Ver Review</a>
+            <a href="#reviews" class="hero-btn">
+                Ver Reviews
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- CONTEÚDO -->
+    <main>
+
+        <!-- ESTATÍSTICAS -->
+        <section class="review-stats">
+
+            <div class="stat-box">
+                <h3>+120</h3>
+                <p>Reviews Publicadas</p>
             </div>
-        </article>
 
-        <article class="card">
-            <img src="img/review2.jpg" alt="Review Spider Man">
-            <div class="card-content">
-                <h3>Spider-Man 2 é um espetáculo visual</h3>
-                <p>Nova aventura do herói traz gráficos incríveis e combate refinado.</p>
-                <a href="#">Ver Review</a>
+            <div class="stat-box">
+                <h3>9.4</h3>
+                <p>Média de Notas</p>
             </div>
-        </article>
 
-        <article class="card">
-            <img src="img/review3.jpg" alt="Review Starfield">
-            <div class="card-content">
-                <h3>Starfield divide opiniões</h3>
-                <p>RPG espacial da Bethesda entrega escala gigante, mas com falhas.</p>
-                <a href="#">Ver Review</a>
+            <div class="stat-box">
+                <h3>AAA</h3>
+                <p>Grandes Lançamentos</p>
             </div>
-        </article>
 
-        <article class="card">
-            <img src="img/review4.jpg" alt="Review Resident Evil">
-            <div class="card-content">
-                <h3>Resident Evil 4 Remake surpreende</h3>
-                <p>Capcom moderniza o clássico sem perder sua essência.</p>
-                <a href="#">Ver Review</a>
+            <div class="stat-box">
+                <h3>2026</h3>
+                <p>Nova Geração</p>
             </div>
-        </article>
 
-        <article class="card">
-            <img src="img/review5.jpg" alt="Review FIFA">
-            <div class="card-content">
-                <h3>EA Sports FC estreia com mudanças</h3>
-                <p>Nova fase da franquia traz melhorias na jogabilidade.</p>
-                <a href="#">Ver Review</a>
+        </section>
+
+        <!-- REVIEW EM DESTAQUE -->
+        <section class="featured-review">
+
+            <h2>🏆 Review da Semana</h2>
+
+            <div class="featured-review-container">
+
+                <img
+                    src="/assets/img/review-featured.jpg"
+                    alt="Review Destaque"
+                >
+
+                <div class="featured-review-content">
+
+                    <span class="review-score">
+                        Nota 9.8
+                    </span>
+
+                    <h3>
+                        GTA VI redefine os jogos de mundo aberto
+                    </h3>
+
+                    <p>
+                        A Rockstar entrega gráficos absurdos,
+                        inteligência artificial avançada e um
+                        mundo extremamente vivo.
+                    </p>
+
+                    <div class="review-tags">
+
+                        <span>Open World</span>
+                        <span>PS5</span>
+                        <span>Xbox</span>
+                        <span>PC</span>
+
+                    </div>
+
+                    <a href="#">
+                        Ler Review Completa
+                    </a>
+
+                </div>
+
             </div>
-        </article>
 
-        <article class="card">
-            <img src="img/review6.jpg" alt="Review Zelda">
-            <div class="card-content">
-                <h3>Zelda Tears of the Kingdom é obra-prima</h3>
-                <p>Nintendo eleva o nível dos jogos de aventura novamente.</p>
-                <a href="#">Ver Review</a>
+        </section>
+
+        <!-- REVIEWS -->
+        <section class="news" id="reviews">
+
+            <h2>🎮 Reviews em Destaque</h2>
+
+            <div class="cards">
+
+                <!-- CARD -->
+                <article class="card">
+
+                    <div class="review-badge">
+                        9.7
+                    </div>
+
+                    <img src="/assets/img/review1.jpg" alt="Review Elden Ring">
+
+                    <div class="card-content">
+
+                        <div class="review-platform">
+                            PC • PS5 • Xbox
+                        </div>
+
+                        <h3>
+                            Elden Ring impressiona com mundo aberto
+                        </h3>
+
+                        <p>
+                            FromSoftware entrega uma experiência épica e desafiadora.
+                        </p>
+
+                        <div class="review-progress">
+
+                            <div class="progress-label">
+                                Gameplay
+                            </div>
+
+                            <div class="progress-bar">
+                                <span style="width:95%"></span>
+                            </div>
+
+                            <div class="progress-label">
+                                Gráficos
+                            </div>
+
+                            <div class="progress-bar">
+                                <span style="width:92%"></span>
+                            </div>
+
+                        </div>
+
+                        <a href="https://www.youtube.com/watch?v=JF6ri8ZCJI0" target="_blank">
+                            Ver Review
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD -->
+                <article class="card">
+
+                    <div class="review-badge">
+                        9.5
+                    </div>
+
+                    <img src="/assets/img/review2.jpg" alt="Review Spider Man">
+
+                    <div class="card-content">
+
+                        <div class="review-platform">
+                            PS5
+                        </div>
+
+                        <h3>
+                            Spider-Man 2 é um espetáculo visual
+                        </h3>
+
+                        <p>
+                            Nova aventura do herói traz gráficos incríveis e combate refinado.
+                        </p>
+
+                        <div class="review-progress">
+
+                            <div class="progress-label">
+                                História
+                            </div>
+
+                            <div class="progress-bar">
+                                <span style="width:90%"></span>
+                            </div>
+
+                            <div class="progress-label">
+                                Gameplay
+                            </div>
+
+                            <div class="progress-bar">
+                                <span style="width:94%"></span>
+                            </div>
+
+                        </div>
+
+                        <a href="https://www.youtube.com/watch?v=TuK5vta0G-0" target="_blank">
+                            Ver Review
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD -->
+                <article class="card">
+
+                    <div class="review-badge">
+                        8.4
+                    </div>
+
+                    <img src="/assets/img/review3.jpg" alt="Review Starfield">
+
+                    <div class="card-content">
+
+                        <div class="review-platform">
+                            PC • Xbox
+                        </div>
+
+                        <h3>
+                            Starfield divide opiniões
+                        </h3>
+
+                        <p>
+                            RPG espacial da Bethesda entrega escala gigante, mas com falhas.
+                        </p>
+
+                        <div class="review-progress">
+
+                            <div class="progress-label">
+                                Exploração
+                            </div>
+
+                            <div class="progress-bar">
+                                <span style="width:88%"></span>
+                            </div>
+
+                            <div class="progress-label">
+                                Performance
+                            </div>
+
+                            <div class="progress-bar">
+                                <span style="width:72%"></span>
+                            </div>
+
+                        </div>
+
+                        <a href="https://www.youtube.com/watch?v=efc-Gf-pTH0" target="_blank">
+                            Ver Review
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD -->
+                <article class="card">
+
+                    <div class="review-badge">
+                        9.3
+                    </div>
+
+                    <img src="/assets/img/review4.jpg" alt="Review Resident Evil" target="_blank">
+
+                    <div class="card-content">
+
+                        <div class="review-platform">
+                            PC • PS5 • Xbox
+                        </div>
+
+                        <h3>
+                            Resident Evil 4 Remake surpreende
+                        </h3>
+
+                        <p>
+                            Capcom moderniza o clássico sem perder sua essência.
+                        </p>
+
+                        <div class="review-progress">
+
+                            <div class="progress-label">
+                                Terror
+                            </div>
+
+                            <div class="progress-bar">
+                                <span style="width:91%"></span>
+                            </div>
+
+                            <div class="progress-label">
+                                Atmosfera
+                            </div>
+
+                            <div class="progress-bar">
+                                <span style="width:93%"></span>
+                            </div>
+
+                        </div>
+
+                        <a href="https://www.youtube.com/watch?v=O25tjqfHo5c" target="_blank">
+                            Ver Review
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD -->
+                <article class="card">
+
+                    <div class="review-badge">
+                        8.9
+                    </div>
+
+                    <img src="/assets/img/review5.jpg" alt="Review FIFA">
+
+                    <div class="card-content">
+
+                        <div class="review-platform">
+                            PC • PS5 • Xbox
+                        </div>
+
+                        <h3>
+                            EA Sports FC estreia com mudanças
+                        </h3>
+
+                        <p>
+                            Nova fase da franquia traz melhorias na jogabilidade.
+                        </p>
+
+                        <div class="review-progress">
+
+                            <div class="progress-label">
+                                Gameplay
+                            </div>
+
+                            <div class="progress-bar">
+                                <span style="width:85%"></span>
+                            </div>
+
+                            <div class="progress-label">
+                                Multiplayer
+                            </div>
+
+                            <div class="progress-bar">
+                                <span style="width:89%"></span>
+                            </div>
+
+                        </div>
+
+                        <a href="https://www.youtube.com/watch?v=iJ6HdXiNA10" target="_blank">
+                            Ver Review
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD -->
+                <article class="card">
+
+                    <div class="review-badge">
+                        9.9
+                    </div>
+
+                    <img src="/assets/img/review6.jpg" alt="Review Zelda">
+
+                    <div class="card-content">
+
+                        <div class="review-platform">
+                            Nintendo Switch
+                        </div>
+
+                        <h3>
+                            Zelda Tears of the Kingdom é obra-prima
+                        </h3>
+
+                        <p>
+                            Nintendo eleva o nível dos jogos de aventura novamente.
+                        </p>
+
+                        <div class="review-progress">
+
+                            <div class="progress-label">
+                                Criatividade
+                            </div>
+
+                            <div class="progress-bar">
+                                <span style="width:99%"></span>
+                            </div>
+
+                            <div class="progress-label">
+                                Exploração
+                            </div>
+
+                            <div class="progress-bar">
+                                <span style="width:97%"></span>
+                            </div>
+
+                        </div>
+
+                        <a href="https://www.youtube.com/watch?v=VCY-zBOt-IA" target="_blank">
+                            Ver Review
+                        </a>
+
+                    </div>
+
+                </article>
+
             </div>
-        </article>
 
-    </div>
+        </section>
 
-</section>
+    </main>
 
-</main>
+    <!-- FOOTER -->
+    <div id="footer"></div>
 
-<!-- FOOTER -->
-<footer class="footer">
-
-    <div class="social">
-        <h4>Social</h4>
-        <p><a href="#">Facebook</a></p>
-        <p><a href="#">Twitter</a></p>
-        <p><a href="#">Instagram</a></p>
-    </div>
-
-    <div class="sobre">
-        <h4>Sobre nós</h4>
-        <p>
-            O Gamer Geek traz reviews, notícias e conteúdos sobre games e cultura geek.
-        </p>
-    </div>
-
-    <div class="copy">
-        <p>© 2026 Gamer Geek - Todos os direitos reservados.</p>
-    </div>
-
-</footer>
+    <!-- JS -->
+    <script src="/assets/js/darkmode.js"></script>
+    <script src="/assets/js/mobile.js"></script>
+    <script src="/assets/js/slider.js"></script>
+    <script src="/assets/js/app.js"></script>
 
 </body>
+
 </html>
