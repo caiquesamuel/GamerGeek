@@ -1182,3 +1182,95 @@ body {
     background: #ff0033;
     transform: translateY(-3px);
 }
+
+/* HERO TECH */
+.tech-hero{
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,0.4),
+            rgba(0,0,0,0.85)
+        ),
+        url('/assets/img/tech-banner.jpg');
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* STATS */
+.platform-stats{
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px,1fr));
+
+    gap: 20px;
+
+    padding: 40px;
+}
+
+.platform-box{
+    background: var(--bg-secondary);
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.platform-box:hover{
+    transform: translateY(-5px);
+
+    border-color: var(--primary);
+}
+
+.platform-box h3{
+    color: var(--primary);
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+.platform-box p{
+    color: var(--text-secondary);
+}
+
+/* TAG */
+.review-score{
+    display: inline-block;
+
+    background: rgba(34,197,94,0.15);
+
+    color: var(--primary);
+
+    border: 1px solid rgba(34,197,94,0.3);
+
+    padding: 5px 12px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px){
+
+    .platform-stats{
+        padding: 20px;
+    }
+
+    .platform-box h3{
+        font-size: 30px;
+    }
+
+}
