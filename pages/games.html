@@ -1,165 +1,236 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Games - Gamer Geek</title>
 
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="/assets/css/estilo.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-<!--    <div class="bg">
-        <img src="img/BackTitle.png" alt="Banner Gamer Geek">
-    </div> -->
+    <!-- HEADER -->
+    <div id="header"></div>
 
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="noticias.html">Notícias</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li>
-                <a href="games.html">Games</a>
-                <ul>
-                    <li><a href="pc.html">PC</a></li>
-                    <li>
-                        <a href="playstation.html">PlayStation</a>
-                        <ul>
-                            <li><a href="ps4.html">PS4</a></li>
-                            <li><a href="ps5.html">PS5</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="xbox.html">Xbox</a>
-                        <ul>
-                            <li><a href="xboxone.html">One</a></li>
-                            <li><a href="xboxseriesx.html">Series X</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="nintendo.html">Nintendo</a>
-                        <ul>
-                            <li><a href="switch.html">Switch</a></li>
-                            <li><a href="switch2.html">Switch 2</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="tecnologia.html">Tecnologia</a></li>
-            <li><a href="hqs.html">HQs</a></li>
-            <li><a href="downloads.html">Downloads</a></li>
-            <li class="search">
-                <input type="text" placeholder="Pesquisar...">
-            </li>
-        </ul>
-    </nav>
-</header>
+    <!-- HERO -->
+    <section class="hero-banner games-hero">
 
-<!-- CONTEÚDO -->
-<main>
+        <div class="hero-overlay">
 
-<section class="news">
+            <span class="hero-tag">
+                🎮 Universo Gamer
+            </span>
 
-    <h2>Escolha sua Plataforma</h2>
+            <h1>
+                Escolha sua plataforma favorita
+            </h1>
 
-    <div class="cards">
+            <p>
+                Notícias, reviews, lançamentos e tudo
+                sobre PlayStation, Xbox, Nintendo e PC Gamer.
+            </p>
 
-        <!-- PC -->
-        <article class="card">
-            <img src="img/pc.jpg" alt="PC Gamer">
+            <a href="#platforms" class="hero-btn">
+                Explorar Plataformas
+            </a>
 
-            <div class="card-content">
-                <h3>PC Gamer</h3>
+        </div>
 
-                <p>
-                    Confira notícias, lançamentos e reviews do mundo PC.
-                </p>
+    </section>
 
-                <a href="pc.html">Acessar</a>
+    <!-- ESTATÍSTICAS -->
+    <section class="review-stats">
+
+        <div class="stat-box">
+            <h3>+350</h3>
+            <p>Jogos Analisados</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>2026</h3>
+            <p>Nova Geração</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>4K</h3>
+            <p>Experiência Next Gen</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>AAA</h3>
+            <p>Grandes Exclusivos</p>
+        </div>
+
+    </section>
+
+    <!-- PLATAFORMAS -->
+    <main>
+
+        <section class="games-section" id="platforms">
+
+            <h2>🔥 Escolha sua Plataforma</h2>
+
+            <div class="platform-grid">
+
+                <!-- PC -->
+                <article class="platform-card">
+
+                    <img src="/assets/img/pc.jpg" alt="PC Gamer">
+
+                    <div class="platform-overlay">
+
+                        <span class="platform-badge">
+                            RTX • Steam • Mods
+                        </span>
+
+                        <h3>PC Gamer</h3>
+
+                        <p>
+                            Performance extrema, mods,
+                            gráficos ultra e liberdade total.
+                        </p>
+
+                        <a href="pc.html">
+                            Explorar
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- PLAYSTATION -->
+                <article class="platform-card">
+
+                    <img src="/assets/img/playstation.jpg" alt="PlayStation">
+
+                    <div class="platform-overlay">
+
+                        <span class="platform-badge">
+                            PS5 • Exclusivos
+                        </span>
+
+                        <h3>PlayStation</h3>
+
+                        <p>
+                            Os maiores exclusivos e experiências
+                            cinematográficas da Sony.
+                        </p>
+
+                        <a href="playstation.html">
+                            Explorar
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- XBOX -->
+                <article class="platform-card">
+
+                    <img src="/assets/img/xbox.jpg" alt="Xbox">
+
+                    <div class="platform-overlay">
+
+                        <span class="platform-badge">
+                            Game Pass • Cloud
+                        </span>
+
+                        <h3>Xbox</h3>
+
+                        <p>
+                            Ecossistema poderoso com Game Pass
+                            e serviços integrados.
+                        </p>
+
+                        <a href="xbox.html">
+                            Explorar
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- NINTENDO -->
+                <article class="platform-card">
+
+                    <img src="/assets/img/nintendo.jpg" alt="Nintendo">
+
+                    <div class="platform-overlay">
+
+                        <span class="platform-badge">
+                            Zelda • Mario • Switch
+                        </span>
+
+                        <h3>Nintendo</h3>
+
+                        <p>
+                            Diversão clássica, criatividade
+                            e franquias lendárias.
+                        </p>
+
+                        <a href="nintendo.html">
+                            Explorar
+                        </a>
+
+                    </div>
+
+                </article>
+
             </div>
-        </article>
 
-        <!-- PLAYSTATION -->
-        <article class="card">
-            <img src="img/playstation.jpg" alt="PlayStation">
+        </section>
 
-            <div class="card-content">
-                <h3>PlayStation</h3>
+        <!-- TRENDING -->
+        <section class="trending-games">
 
-                <p>
-                    Tudo sobre PS4, PS5 e exclusivos da Sony.
-                </p>
+            <h2>🚀 Jogos em Alta</h2>
 
-                <a href="playstation.html">Acessar</a>
+            <div class="trending-grid">
+
+                <div class="trending-item">
+                    <span>#1</span>
+                    <h4>GTA VI</h4>
+                </div>
+
+                <div class="trending-item">
+                    <span>#2</span>
+                    <h4>Elden Ring</h4>
+                </div>
+
+                <div class="trending-item">
+                    <span>#3</span>
+                    <h4>Spider-Man 2</h4>
+                </div>
+
+                <div class="trending-item">
+                    <span>#4</span>
+                    <h4>Cyberpunk 2077</h4>
+                </div>
+
             </div>
-        </article>
 
-        <!-- XBOX -->
-        <article class="card">
-            <img src="img/xbox.jpg" alt="Xbox">
+        </section>
 
-            <div class="card-content">
-                <h3>Xbox</h3>
+    </main>
 
-                <p>
-                    Veja novidades do Xbox One e Series X.
-                </p>
+    <!-- FOOTER -->
+    <div id="footer"></div>
 
-                <a href="xbox.html">Acessar</a>
-            </div>
-        </article>
-
-        <!-- NINTENDO -->
-        <article class="card">
-            <img src="img/nintendo.jpg" alt="Nintendo">
-
-            <div class="card-content">
-                <h3>Nintendo</h3>
-
-                <p>
-                    Notícias e lançamentos do Nintendo Switch.
-                </p>
-
-                <a href="nintendo.html">Acessar</a>
-            </div>
-        </article>
-
-    </div>
-
-</section>
-
-</main>
-
-<!-- FOOTER -->
-<footer class="footer">
-
-    <div class="social">
-        <h4>Social</h4>
-
-        <p><a href="#">Facebook</a></p>
-        <p><a href="#">Twitter</a></p>
-        <p><a href="#">Instagram</a></p>
-    </div>
-
-    <div class="sobre">
-        <h4>Sobre nós</h4>
-
-        <p>
-            O Gamer Geek traz conteúdos completos sobre games,
-            tecnologia e cultura geek.
-        </p>
-    </div>
-
-    <div class="copy">
-        <p>© 2026 Gamer Geek - Todos os direitos reservados.</p>
-    </div>
-
-</footer>
+    <!-- JS -->
+    <script src="/assets/js/darkmode.js"></script>
+    <script src="/assets/js/mobile.js"></script>
+    <script src="/assets/js/slider.js"></script>
+    <script src="/assets/js/app.js"></script>
 
 </body>
+
 </html>

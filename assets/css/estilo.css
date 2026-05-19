@@ -743,6 +743,182 @@ body {
     height: 200px;
 }
 
+/* HERO GAMES */
+.games-hero{
+    height: 550px;
+}
+
+/* SECTION */
+.games-section{
+    padding: 40px;
+}
+
+.games-section h2{
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+/* GRID */
+.platform-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.platform-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    height: 500px;
+    border: 1px solid var(--border);
+    transition: 0.4s;
+}
+
+.platform-card:hover{
+    transform: translateY(-8px);
+    border-color: var(--primary);
+    box-shadow:
+        0 0 30px rgba(34,197,94,0.2);
+}
+
+.platform-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.platform-card:hover img{
+    transform: scale(1.08);
+}
+
+/* OVERLAY */
+.platform-overlay{
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,0.95),
+            rgba(0,0,0,0.2)
+        );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 30px;
+}
+
+/* BADGE */
+.platform-badge{
+    width: fit-content;
+    margin-bottom: 18px;
+
+    background: rgba(34,197,94,0.15);
+    border: 1px solid rgba(34,197,94,0.3);
+
+    color: #22c55e;
+
+    padding: 8px 14px;
+    border-radius: 999px;
+
+    font-size: 12px;
+}
+
+/* TITULO */
+.platform-overlay h3{
+    font-size: 34px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+/* TEXTO */
+.platform-overlay p{
+    color: #d1d5db;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* BOTÃO */
+.platform-overlay a{
+    width: fit-content;
+
+    background: var(--accent);
+    color: #fff;
+
+    padding: 14px 24px;
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.platform-overlay a:hover{
+    transform: translateY(-3px);
+}
+
+/* TRENDING */
+.trending-games{
+    padding: 40px;
+}
+
+.trending-games h2{
+    color: var(--primary);
+    margin-bottom: 25px;
+}
+
+.trending-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+.trending-item{
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+
+    padding: 30px;
+    border-radius: 14px;
+
+    transition: 0.3s;
+}
+
+.trending-item:hover{
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.trending-item span{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--accent);
+
+    display: block;
+    margin-bottom: 10px;
+}
+
+.trending-item h4{
+    color: var(--text);
+    font-size: 22px;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+
+    .platform-card{
+        height: 420px;
+    }
+
+    .platform-overlay h3{
+        font-size: 28px;
+    }
+
+}
+
 #theme-toggle{
     background: transparent;
     border: 1px solid var(--border);
