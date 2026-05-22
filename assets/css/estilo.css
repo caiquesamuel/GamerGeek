@@ -1502,3 +1502,132 @@ body {
     }
 
 }
+
+/* HERO PC */
+.pc-hero{
+    background:
+        linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)),
+        url('/assets/img/pc-banner.jpg') center/cover;
+}
+
+/* PREMIUM REVIEW */
+.premium-review{
+    max-width: 1300px;
+    margin: 80px auto;
+    padding: 50px;
+    background: linear-gradient(145deg, #111, #1a1a1a);
+    border: 1px solid #2d2d2d;
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    box-shadow: 0 0 40px rgba(0,255,170,.08);
+}
+
+.review-left{
+    flex: 1;
+}
+
+.review-badge{
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    background: #00ffaa;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.review-left h2{
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.review-left p{
+    color: #bbb;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.review-left ul{
+    list-style: none;
+}
+
+.review-left li{
+    margin-bottom: 12px;
+    color: #ddd;
+}
+
+.review-score-box{
+    width: 260px;
+    height: 260px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(145deg,#00ffaa,#00c3ff);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #000;
+
+    box-shadow: 0 0 35px rgba(0,255,170,.3);
+}
+
+.review-score-box h3{
+    font-size: 5rem;
+}
+
+.review-score-box p{
+    font-weight: bold;
+    text-align: center;
+}
+
+/* PREMIUM CARD */
+.premium-card{
+    transition: .4s;
+}
+
+.premium-card:hover{
+    transform: translateY(-12px) scale(1.02);
+}
+
+/* PREMIUM SLIDE */
+.premium-slide{
+    border: 1px solid #2d2d2d;
+    transition: .4s;
+}
+
+.premium-slide:hover{
+    transform: scale(1.05);
+}
+
+/* RESPONSIVO */
+@media(max-width: 950px){
+
+    .premium-review{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .review-score-box{
+        width: 200px;
+        height: 200px;
+    }
+
+    .review-score-box h3{
+        font-size: 4rem;
+    }
+
+    .review-left h2{
+        font-size: 2rem;
+    }
+
+}
